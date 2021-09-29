@@ -21,7 +21,7 @@ const HeaderCartBtn = props => {
        const timer = setTimeout(()=> {
             setBtnAnimated(false)
         }, 300)
-
+        //clean up function 
         return ()=> {
             clearTimeout(timer)
         }
