@@ -1,8 +1,9 @@
 import {useState} from 'react';
 
-import Header from './Layout/header/header'
-import Meals from './Meals/meals'
-import Cart from './Cart/cart';
+import Header from './components/Layout/header/header'
+import Meals from './components/Meals/meals'
+import Cart from './components/Cart/cart';
+import CartProvider from './store/cartProvider';
 
 function App() {
 
@@ -14,13 +15,13 @@ function App() {
     setCartVisible(false)
   }
   return (
-    <>
-      {cartVisible && <Cart onHideCart = {hideCart}/>}
+    <CartProvider>
+      {cartVisible && <Cart onHideCart = {hideCart} />}
       <Header onShowCart ={showCart} /> 
       <main>
         <Meals/>
       </main>
-    </>
+    </CartProvider>
   );
 }
 
