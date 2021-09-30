@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './meals.module.css'
 import MealsSummary from './mealsSummary'
 import AvailableMeals from './availableMeals'
 

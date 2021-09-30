@@ -44,3 +44,9 @@
     background-color: #8a2b06;
     color: white;
   }
+
+  .finishSubmit {
+    text-align: center;
+    color: green;
+    font-size: 1.2em;
+  }
